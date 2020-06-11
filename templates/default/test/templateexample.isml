@@ -1,0 +1,11 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/login.css');
+    </isscript>
+    
+    <div class="hero slant-down">
+        <h1 class="page-title">${Resource.msg('Example Controller Elias')}</h1>
+    </div>
+    <isinclude template="account/components/registerForm" />
+</isdecorate>
