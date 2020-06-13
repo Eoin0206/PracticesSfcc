@@ -5,7 +5,7 @@ var server = require('server');
 
 server.extend(page);
 
-server.replace('Show', server.middleware.get, function(req, res, next){
+server.replace('Show2', server.middleware.get, function(req, res, next){
     res.render('test/NewTemplate');
     next();
 });

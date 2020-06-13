@@ -3,20 +3,9 @@
         var assets = require('*/cartridge/scripts/assets.js');
         assets.addCss('/css/login.css');
     </isscript>
-    
+
     <div class="hero slant-down">
         <h1 class="page-title">${Resource.msg('Example Controller Elias extend')}</h1>
     </div>
-    <form>
-        <div class="form-group ">
-        <label class="form-control-label" for="login-form-email">
-            ${Resource.msg('label.input.login.email', 'login', null)}
-        </label>
-        <input type="email" id="login-form-email" <isprint value="${pdict.form.email.attributes}" encoding="off" /> class="form-control required">
-        <div class="invalid-feedback" id="form-email-error"></div>
-        </div>
-        <input type="submit" name="sendtest">
-    </form>
-    <isif condition="${pdict.form.email.mandatory === true}">required</isif>
-    <h1> TULPAQUINO-${pdict.form} </h1>
+    <isinclude template="account/components/registerForm" />
 </isdecorate> 
